@@ -149,11 +149,11 @@ document.getElementById("demo").innerHTML = text;
 
 // String
 
-let x = "John";
-let y = new String("John");
+let x = "John"; // typeof x will return string
+let y = new String("John"); // typeof y will return object
 
-// typeof x will return string
-// typeof y will return object
+
+
 
 
 
