@@ -55,4 +55,63 @@ let newText = text.replace("Microsoft", "W3Schools");  // Return  "Please visit 
 
 
 
+// NaN - Not a Number
+// NaN is a JavaScript reserved word indicating that a number is not a legal number.
 
+// Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+let x = 100 / "Apple";  // x will be NaN (Not a Number)
+
+let x = 100 / "Apple";
+isNaN(x);               // returns true because x is Not a Number
+
+// NaN is a number: typeof NaN returns number:
+
+typeof NaN;            // returns "number"
+
+
+
+// Number() can be used to convert JavaScript variables to numbers:
+
+Number(true);          // returns 1
+Number(false);         // returns 0
+Number("10");          // returns 10
+Number("  10");        // returns 10
+Number("10  ");        // returns 10
+Number(" 10  ");       // returns 10
+Number("10.33");       // returns 10.33
+Number("10,33");       // returns NaN
+Number("10 33");       // returns NaN
+Number("John");        // returns NaN
+
+
+// parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+parseInt("-10");        // returns -10
+parseInt("-10.33");     // returns -10
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+
+/// Array
+
+
+// The Difference Between Arrays and Objects
+// In JavaScript, arrays use numbered indexes.  
+
+// In JavaScript, objects use named indexes.
+
+
+// A common question is: How do I know if a variable is an array?
+
+// The problem is that the JavaScript operator typeof returns "object":
+
+// array is a special kind of object
+const fruits = ["Banana", "Orange", "Apple"];
+typeof fruits;    // returns object
+
+
+Array.isArray(fruits);   // returns true
