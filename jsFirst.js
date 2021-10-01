@@ -40,6 +40,8 @@ let x = 0; // Cant re-declare
 
 //
 
+x = 0 /// now   can re-assign
+
 {
     let x = 2;
   }
