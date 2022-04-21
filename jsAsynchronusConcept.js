@@ -32,6 +32,36 @@ function myDisplayer(some) {
   });
 
 
+// another example of call back function
+
+const takeOrder = (customer,callBackProcessOrder) => {
+  console.log(`take order for ${customer}`);
+  callBackProcessOrder(customer);
+};
+
+const processOrder = (customer,callBackCustomerOrder) => {
+  console.log(`process order for ${customer}`)
+
+  setTimeout(()=>{
+    console.log(`cooking completed`)
+    console.log(` order processed for ${customer}`)
+    callBackCustomerOrder(customer);
+  },3000);
+};
+
+const completeOrder = (customer) => {
+  console.log(`completed order for ${customer}`)
+};
+
+takeOrder('customer 1',(customer)=>{
+  processOrder(customer,(customer)=>{
+  completeOrder(customer);
+  });
+});
+
+
+console.log('hello');
+
   // *** Asynchronous Behaviour ***
 
   // Asynchronous behaviour is when a function is called and it takes some time to complete
