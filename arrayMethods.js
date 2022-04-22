@@ -108,6 +108,42 @@ let findMethod = () => {
           console.log(index); // 2
 };
 
-findMethod();
+//findMethod();
 
+//** ****************/
+
+//**  array filter */
+
+// filter method returns a new array
+// filter helps to find all the elements from the array that match the specified test condition
+// filter does not change the original array
+// filter does not stop when it finds a particular match
+// but keeps checking for other elements in the array that match the condition
+
+// difference between array find and filter
+// find returns the first element that matches the callback function
+// filter returns all the elements that match the callback function
+
+let filterMethod = () => {
+    const employees = [
+        { name: "David Carlson", age: 30 },
+        { name: "John Ka", age: 34 },
+        { name: "Mike Sheridan", age: 25 },
+        { name: "John Carte", age: 50 }
+       ];
+       
+       let user;
+       
+       // find returns the first element that matches the callback function
+        user = employees.filter((elements,index) => {
+           let data =  elements.name.indexOf('John') > -1;
+           return data;
+        });
+       
+       console.log(user); // { name: "John Ka", age: 34 }
+};
+
+//filterMethod();
+
+//** ****************/
 
