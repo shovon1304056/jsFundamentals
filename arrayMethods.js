@@ -61,7 +61,7 @@ let mapping = () => {
       console.log(lastNames); // ["Sheridan", "Lee", "Carte"]
 };
 
-mapping();
+//mapping();
 
 
 // so it has returned a new array with the same length as the original array
@@ -71,6 +71,43 @@ mapping();
 //** ****************/
 
 
-//**  array find*/
+//**  array find and find index*/
+
+// use to find an element in an array
+// find returns the first element that matches the callback function
+// it element is found, then breaks the loop
+
+// code 
+
+let findMethod = () => {
+    const employees = [
+        { name: "David Carlson", age: 30 },
+        { name: "John Ka", age: 34 },
+        { name: "Mike Sheridan", age: 25 },
+        { name: "John Carte", age: 50 }
+       ];
+       
+       let user;
+       
+       // find returns the first element that matches the callback function
+        user = employees.find((elements) => {
+           let data =  elements.name.indexOf('Mike') > -1;
+           console.log(data);
+           return data;
+        });
+       
+       console.log(user); // { name: "John Ka", age: 34 }
+
+         // find index returns the index of the first element that matches the callback function
+         let index = employees.findIndex((elements) => {
+              let data =  elements.name.indexOf('Mike') > -1;
+              console.log(data);
+              return data;
+          });
+
+          console.log(index); // 2
+};
+
+findMethod();
 
 
