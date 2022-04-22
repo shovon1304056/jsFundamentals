@@ -4,7 +4,7 @@
 // it also takes 2 arguments in the callback function, the index and the value or the array
 // for each does not return anything
 
-//*****
+//**  array for each */
 //var months = ['January', 'February', 'March', 'April'];
 let loop =  () => {
     const months = ['January', 'February', 'March', 'April'];
@@ -21,7 +21,7 @@ let loop =  () => {
 
  //** */
 
-//** */
+//** array map */
 // array map
 // map returns a new array
 // map uses a callback function
@@ -68,6 +68,9 @@ mapping();
 // it does not change the original array
 // it returns a new array
 
-//** */
+//** ****************/
+
+
+//**  array find*/
 
 
