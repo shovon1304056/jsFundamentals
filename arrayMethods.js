@@ -9,7 +9,7 @@
 let loop =  () => {
     const months = ['January', 'February', 'March', 'April'];
 
-        months.forEach(function(month,) {
+        months.forEach(function(month) {
         console.log(month);
 
 
@@ -140,10 +140,10 @@ let filterMethod = () => {
            return data;
         });
        
-       console.log(user); // { name: "John Ka", age: 34 }
+       console.log(user); // { 2 results }
 };
 
-//filterMethod();
+filterMethod();
 
 //** ****************/
 
