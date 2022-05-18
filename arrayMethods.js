@@ -147,3 +147,19 @@ filterMethod();
 
 //** ****************/
 
+//Slice - jeta theke suru tar seser ag porjonto rekhe bakigulo falay dibe
+
+let fruit = [1,2,3,4,5];
+const citrus = fruit.slice(1, 3);
+
+result - 2,3
+
+//Splice - jeta theke suru kore count kore jottuk jaite bole jeye ogulo k falay dibe
+
+const fruits = [1,2,3,4,5];
+
+// At position 1, add 3 elements, from position 1 : 3 elements will be deducted: 
+fruits.splice(1, 3,77,99,100);
+
+result - 1,77,99,100,5
+
